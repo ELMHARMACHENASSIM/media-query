@@ -1,0 +1,75 @@
+nav ul{
+    display:flex;
+    justify-content: space-around; 
+    list-style-type: none;
+}
+
+/* ex01 */
+
+@media (min-width:1250px) {
+    .item1 li{
+       background-color: blue;
+    }
+}
+@media (max-width:1250px) {
+    .item1 li{
+       background-color: green;
+    }
+}
+
+/* ex02 */
+
+@media (min-width:1250px) {
+    .item2 li{
+       background-color: red;
+    }
+}
+@media (max-width:1250px) {
+    .item2 li{
+       background-color: orange;
+    }
+}
+
+/* ex03 */
+
+@media (min-width:1000px) {
+    .item3 li{
+       font-weight: bold;
+       text-decoration: underline;
+    }
+}
+@media (max-width:1250px) {
+    .item3 li{
+        color: blue;
+        text-decoration: underline;
+    }
+}
+
+/* ex04 */
+@media (min-width:900px) , (max-width:800px)  {
+    .heading{
+        color: green;
+        border: 1px solid green;
+    }
+}
+/* ex05 */
+@media (min-width:900px) , (max-width:1250px)  {
+    .heading2 ,.item5 li{
+        color: red;
+        border: 1px solid yellow;
+    }
+}
+ /* ex06 */
+ #exo6{
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/tartine.jpg);
+   background-position: center;
+   background-size: cover;
+ }
+ @media (max-width:900px){
+   #ex06{
+    width: 125px;
+    height: 125px;
+   }
+ }
